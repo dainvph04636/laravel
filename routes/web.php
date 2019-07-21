@@ -24,3 +24,12 @@ Route::get('hello','HelloController@hello');
 Route::get('users/{id}/{name}', function ($index, $name) {
     return "tham so truyen vao la " . $index . " --- " . $name;
 });
+
+Route::get('input','InputController@input')->name('input-view');
+Route::post('sum', 'InputController@sum')->name('sum');
+
+// Tao route Student
+ Route::get('students', 'StudentController@index')->name('students');
+
+// Tao route Class
+Route::get('classes', 'ClassRoomController@index')->name('classes');
