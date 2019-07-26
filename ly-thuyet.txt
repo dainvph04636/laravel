@@ -1,0 +1,18 @@
+* route::redirect : điều hướng sang các route khác
+---------
+
+KET NOI DATABASE
+
+- Tao db
+- confix file .env
+- Tạo bảng: sử dụng migration
+	php artisan make:migration create_students_table
+
+	php artisan migrate
+
+- Tao model: 
+	php artisan make:model Models/Student
+
+- Seeder:
+
+(((php artisan serve --port-6969))) chay cong khac 8000
