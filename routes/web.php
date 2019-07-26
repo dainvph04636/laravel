@@ -33,3 +33,14 @@ Route::post('sum', 'InputController@sum')->name('sum');
 
 // Tao route Class
 Route::get('classes', 'ClassRoomController@index')->name('classes');
+Route::get('admins', 'AdminController@index')->name('admins');
+Route::get('users', 'UserController@index')->name('users');
+
+//
+Route::get('/admin_temp',function (){
+	return view ('admin.master');
+});
+Route::get('/admin_temp/class',function (){
+	return view ('admin.class');
+});
+
