@@ -16,3 +16,9 @@ KET NOI DATABASE
 - Seeder:
 
 (((php artisan serve --port-6969))) chay cong khac 8000
+
+
+-- MIDDLEWARE
+tao file custom middleware
+$php artisan make:middleware CheckActiveAdmin
+(middleware, kernel, controller construct)
